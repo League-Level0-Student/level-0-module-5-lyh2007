@@ -17,20 +17,33 @@ public class EvilPolygonsChallenge {
 		
 		//3. Use if statements to check the the value of colorChoice and set the pen color accordingly 
 		if(colorChoice==0){
-	robutt.setPenColor(Color.cyan);
+	robutt.setPenColor(Color.CYAN);
 	
 		}
 		if(colorChoice==1){
 			robutt.setPenColor(Color.ORANGE);
+		}
 			if(colorChoice==2){
 				robutt.setPenColor(Color.PINK);
+			}
 		//4. Ask the use how many polygons they want to be drawn.
-		JOptionPane.showInputDialog(null, "How many polygons do you want to draw? :3 XD =3");
+	String Izzy = JOptionPane.showInputDialog(null, "How many polygons do you want to draw? :3 XD =3");
+	int x = Integer.parseInt(Izzy);
 		//5. Use the robot to draw the number of polygons the user requested.
-		
+	robutt.penDown();
+	for (int i = 0; i < x; i++) {
+	robutt.move(150);
+	robutt.turn(90);
+	robutt.move(150);
+	robutt.turn(90);
+	robutt.move(150);
+	robutt.turn(90);
+	robutt.move(150);
+	}
 		//6. Make it so your shapes do not overlap
 
 		//7. Challenge: add more colors to the Option Dialog.
+	//i'm not doing the challenge   
 	
 		
 		
@@ -40,4 +53,6 @@ public class EvilPolygonsChallenge {
 		
 	}
 }
+	
+
 
