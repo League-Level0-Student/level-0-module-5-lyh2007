@@ -13,7 +13,7 @@ public class EvilPolygonsChallenge {
 		Robot robutt = new Robot ();
 		//2. Set the speed to 100
         robutt.setSpeed(100);
-		int colorChoice=JOptionPane.showOptionDialog(null, "hello", "title", JOptionPane.INFORMATION_MESSAGE, JOptionPane.DEFAULT_OPTION, null, new String[]{"Cyan","orange", "pink"}, 0);
+		int colorChoice=JOptionPane.showOptionDialog(null, "hello", "title", JOptionPane.INFORMATION_MESSAGE, JOptionPane.DEFAULT_OPTION, null, new String[]{"Cyan","Green", "pink"}, 0);
 		
 		//3. Use if statements to check the the value of colorChoice and set the pen color accordingly 
 		if(colorChoice==0){
@@ -21,7 +21,7 @@ public class EvilPolygonsChallenge {
 	
 		}
 		if(colorChoice==1){
-			robutt.setPenColor(Color.ORANGE);
+			robutt.setPenColor(Color.GREEN);
 		}
 			if(colorChoice==2){
 				robutt.setPenColor(Color.PINK);
@@ -39,6 +39,7 @@ public class EvilPolygonsChallenge {
 	robutt.move(150);
 	robutt.turn(90);
 	robutt.move(150);
+	robutt.move(10);
 	}
 		//6. Make it so your shapes do not overlap
 
